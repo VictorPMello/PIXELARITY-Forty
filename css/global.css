@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;700&display=swap');
+
 :root{
     --color-background: #242943ea;
     --color-text-primary: #ffffff;
@@ -15,16 +17,57 @@
 
 body{
     background-image: url(../images/img_background.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+
+body, input, textarea, button{
+    font: 400 1rem 'Gothic A1', sans-serif;
+}
+
+h1, a{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-text-primary);
 }
 
 header{
+    height: 50vh;
     background-color: var(--color-background);
+    text-transform: uppercase;
 }
 
 nav{
-    padding: 0 2%;
+    background: #367c86;/*retirar depois*/
+    padding: .8rem 2%;
     display: flex;
     justify-content: space-between;
+}
+
+.title a h1{
+    letter-spacing: .4rem;
+    display: inline-block;
+    transition: .2s;
+}
+
+.title h1:first-child{
+    padding: .4rem;
+    margin-right: 1.2rem;
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+}
+
+.title a:hover h1:first-child{
+    background-color: var(--color-hover);   
+}
+
+.title a:hover h1:last-child{
+    color: var(--color-hover);
+}
+
+.menu, ul{
+    display: flex;
 }
