@@ -1,0 +1,32 @@
+/** Section grid-content **/
+
+section.grid-content{
+    width: 100%;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.grid-content article{
+    height: 35rem;
+    background-color: burlywood;
+}
+
+section.grid-content article img{
+    display: none;
+}
+
+/*
+section.grid-content article .article-text{
+    
+    
+}
+*/
+
+
+
+
+
+
+
+/** Fim da section grid-content **/
