@@ -44,15 +44,18 @@ body, input, textarea, button, a, i{
 }
 
 .btn{
+    background: none;
     width: 100%;
     height: 100%;
     margin: 0;
-    background: none;
     border: .3rem solid var(--color-text-primary); 
-    cursor: pointer;
+    
     text-transform: uppercase; 
     color: var(--color-text-primary);
     font-size: 1.8rem;
+    line-height: 100%;
+    
+    cursor: pointer;
     transition: .3s;
 }
 
@@ -127,7 +130,6 @@ nav{
     backdrop-filter: blur(.7rem); /*aplica blur apenas no background*/
     background: var(--color-background);
     position: fixed;
-    display: ;
     width: 100vw;
     height: 100vh;
     top: 0;
