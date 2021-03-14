@@ -2,31 +2,56 @@
 
 section.grid-content{
     width: 100%;
-    background-color: burlywood;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 section.grid-content article{
-    height: 35rem;
-    background-color: burlywood;
+    position: relative;
+    height: 30rem;
 }
 
 section.grid-content article img{
-    display: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
-/*
 section.grid-content article .article-text{
-    
-    
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    padding-top: 10rem;
+
+    width: 65%;
+
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
-*/
 
+section.grid-content article .article-text h2{
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-text-primary);
+}
 
+section.grid-content article .article-text p{
+    font-size: 1.7rem;
+    padding-top: 2rem;
+}
 
+section.grid-content article a{
+    position: absolute;
+    z-index: 9;
 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
-
-
+/* Descobrir como concertar o h2 com o a e background */
 /** Fim da section grid-content **/

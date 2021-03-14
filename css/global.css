@@ -33,7 +33,7 @@ body{
     background-image: url(../images/img_background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 40rem;
+    height: 45rem;
     width: 100%;
 }
 
@@ -69,7 +69,7 @@ body, input, textarea, button, a, i{
 /** Header **/
 
 header{
-    height: 40rem;
+    height: 45rem;
     background-color: var(--color-background);
     text-transform: uppercase;
 }
@@ -126,18 +126,19 @@ nav{
     display: none;
     backdrop-filter: blur(.7rem); /*aplica blur apenas no background*/
     background: var(--color-background);
-    position: absolute;
+    position: fixed;
+    display: ;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 90;
 }
 
 .menu ul > i{
-    z-index: 9;
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 6rem;
     font-size: 3.5rem;
     cursor: pointer;
     transition: .3s;
@@ -217,6 +218,17 @@ header > .container{
 .container > button{
     max-width: 25rem;
     height: 5rem;
+}
+
+.container > button > i{
+    font-size: 1.9rem;
+    transition: .3s;
+    padding-left: .8rem;
+    font-weight: 600;
+}
+
+.container > button:hover > i{
+    color: var(--color-hover);
 }
 
 /** Fim do Header **/
