@@ -117,19 +117,21 @@
     <section class="form-content">
         <div class="container">
             <form>
-                <div class="w50">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="Name">
-                </div><!--.w50-->
-
-                <div class="w50">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="Email">
-                </div><!--.w50-->
+                <div class="form-warper">
+                    <div class="w50">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="Name" required>
+                    </div><!--.w50-->
+    
+                    <div class="w50">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="Email" required>
+                    </div><!--.w50-->
+                </div><!--.form-wraper-->
 
                 <div class="w100">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message"></textarea>
                 </div><!--.w100-->
 
                 <div class="form-buttons">
@@ -137,6 +139,29 @@
                     <input class="btn" type="reset" value="clear">
                 </div><!--.form-buttons-->
             </form>
+
+            <div class="info-content">
+                <div class="info-wraper">
+                    <i class="far fa-envelope"></i>
+                    <h1>Email</h1>
+                    <a href="">noxot91199@ichkoch.com</a>
+                </div><!--.info-wraper-->
+
+                <div class="info-wraper">
+                    <i class="fas fa-phone"></i>
+                    <h1>Phone</h1>
+                    <p>(000) 000-0000 x00000</p>
+                </div><!--.info-wraper-->
+
+                <div class="info-wraper">
+                    <i class="fas fa-home"></i>
+                    <h1>Address></h1>
+                    <p>Idaho Falls<br/>
+                        9361 Chaim Prairie, 26689<br/>
+                        Saint Helena
+                    </p>
+                </div><!--.info-wraper-->
+            </div><!--.info-content-->
         </div><!--.container-->
     </section><!--.form-content-->
 </body>

@@ -120,4 +120,76 @@ section.form-content{
     backdrop-filter: brightness(40%);
     padding: 3rem 0;
 }
+
+section.form-content form .form-warper{
+    display: flex;
+}
+
+section.form-content form{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.w50{
+    display: block;
+    width: 50%;
+}
+
+.w100{
+    width: 100%;
+}
+
+section.form-content form label{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+section.form-content form input[type=text],
+section.form-content form textarea{
+    background-color: var(--color-background);
+    backdrop-filter: brightness(7);
+    border: 0;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+section.form-content form .w50 input{
+    width: 95%;
+    line-height: 5rem;
+}
+
+section.form-content form .w100 textarea{
+    width: 100%;
+    padding-top: .5rem;
+    height: 15rem;
+    resize: none;
+}
+
+section.form-content form .form-buttons{
+    display: flex;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+section.form-content form .form-buttons input[type=submit]{
+    width: 30%;
+    margin-right: 2rem;
+
+    border: 0;
+    background: var(--color-text-primary);
+    color: var(--color-background);
+    transition: .3s;
+}
+
+section.form-content form .form-buttons input[type=submit]:hover{
+    background: var(--color-hover);
+}
+
+section.form-content form .form-buttons input[type=reset]{
+    width: 20%;
+}
 /**Fim da section.form-content**/
