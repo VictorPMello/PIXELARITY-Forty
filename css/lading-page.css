@@ -130,6 +130,7 @@ section.form-content form{
     letter-spacing: .3rem;
     font-size: 2rem;
     font-weight: 200;
+    margin-bottom: 4rem;
 }
 
 .w50{
@@ -191,5 +192,59 @@ section.form-content form .form-buttons input[type=submit]:hover{
 
 section.form-content form .form-buttons input[type=reset]{
     width: 20%;
+}
+
+.info-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.info-content .info-wraper{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.185);
+    display: flex;
+}
+
+.info-content .info-wraper i{
+    background-color: var(--color-text-primary);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    color: var(--color-background);
+
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    transition: .3s;
+}
+
+.info-content .info-wraper i:hover{
+    background-color: var(--color-hover);
+}
+
+.info-content .info-wraper .info-text-content{
+    padding-left: 2rem;
+}
+ 
+.info-content .info-wraper .info-text-content h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.info-content .info-wraper .info-text-content a{
+    border-bottom: .5px dotted var(--color-text-primary);
+    transition: .3s;
+}
+
+.info-content .info-wraper .info-text-content a:hover{
+    border-bottom: none;
+    color: var(--color-hover);
+}
+
+.info-content .info-wraper .info-text-content p,
+.info-content .info-wraper .info-text-content a{
+    font-size: 2rem;
 }
 /**Fim da section.form-content**/
