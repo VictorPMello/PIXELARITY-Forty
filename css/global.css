@@ -235,6 +235,65 @@ header > .container{
 
 /** Fim do Header **/
 
-/** Footer **/
+.info-content .info-wraper i,
+footer a i{
+    background-color: var(--color-text-primary);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    color: var(--color-background);
 
+    text-align: center;
+    font-size: 2.5rem;
+    transition: .3s;
+}
+
+.info-content .info-wraper i::before,
+footer a i::before{
+    line-height: 5rem;
+}
+
+/** Footer **/
+footer{
+    background-color: var(--color-background);
+    backdrop-filter: brightness(40%);
+    padding-bottom: 3.5rem;
+}
+
+footer .icons-content{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+footer .icons-content a{
+    margin: 0 1.5rem;
+}
+
+footer i:hover{
+    background-color: var(--color-hover);
+}
+
+footer .footer-text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+footer .footer-text h1{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+footer .footer-text a{
+    font-size: 1.5rem;
+    border-bottom: .5px dotted var(--color-text-primary);
+    transition: .3s;
+}
+
+footer .footer-text a:hover{
+    color: var(--color-hover);
+    border-bottom: none;
+}
 /** Fim do Footer **/
