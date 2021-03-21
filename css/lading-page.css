@@ -1,5 +1,4 @@
 /**Section.grid-content**/
-
 section.grid-content{
     width: 100%;
     display: grid;
@@ -97,7 +96,8 @@ section.grid-content article a p{
 /**Fim da section.grid-content**/
 
 /**Section.text-content**/
-section.text-content{
+section.text-content{ 
+    display: none; /* Tirar */
     background-color: var(--color-background);
     padding: 3rem 0;
 }
@@ -159,8 +159,12 @@ section.form-content form textarea{
 }
 
 section.form-content form .w50 input{
-    width: 95%;
+    width: 100%;
     line-height: 5rem;
+}
+
+section.form-content form .w50:nth-of-type(1) input{
+    width: 95%;
 }
 
 section.form-content form .w100 textarea{
@@ -235,6 +239,7 @@ section.form-content form .form-buttons input[type=reset]{
 
 @media screen and (min-width: 720px){
     section.grid-content{
+        display: none; /* Tirar */
         grid-template-columns: calc(100% / 3);
         grid-template-areas: 
         "a a b"
@@ -269,5 +274,47 @@ section.form-content form .form-buttons input[type=reset]{
     
     section.grid-content article:nth-of-type(6){
         grid-area: f;
+    }
+
+    section.form-content > .container{
+        width: 100%;
+        padding: 0 0 0 4rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.185);
+    }
+
+    section.form-content form{
+        border-right: 1px solid rgba(204, 204, 204, 0.185);
+        padding-bottom: 4rem;
+        padding-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    section.form-content form .form-buttons input[type=submit]{
+        min-width: 20rem;
+        max-width: 30rem;
+    }
+
+    section.form-content form .form-buttons input[type=reset]{
+        min-width: 15rem;
+        max-width: 25rem;
+    }
+
+    .info-content{
+        padding-top: 4rem;
+        align-items: center;
+    }
+    
+    .info-content .info-wraper{
+        width: 100%;
+        padding-bottom: 5rem;
+        padding-left: 2rem;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.185);
+    }
+
+    .info-content .info-wraper:nth-of-type(3){
+        border-bottom: 0;
+        padding-bottom: 3rem;
     }
 }
