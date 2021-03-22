@@ -97,7 +97,6 @@ section.grid-content article a p{
 
 /**Section.text-content**/
 section.text-content{ 
-    display: none; /* Tirar */
     background-color: var(--color-background);
     padding: 3rem 0;
 }
@@ -118,7 +117,7 @@ section.text-content .container p{
 section.form-content{
     background-color: var(--color-background);
     backdrop-filter: brightness(40%);
-    padding: 3rem 0;
+    padding: 0 3rem 0;
 }
 
 section.form-content form .form-warper{
@@ -237,9 +236,8 @@ section.form-content form .form-buttons input[type=reset]{
 /**Fim da section.form-content**/
 
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 920px){
     section.grid-content{
-        display: none; /* Tirar */
         grid-template-columns: calc(100% / 3);
         grid-template-areas: 
         "a a b"
